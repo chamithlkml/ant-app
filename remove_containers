@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-docker image rm $(docker image ls -q)
-docker image rm $(docker image ls -q)
-docker volume rm $(docker volume ls -q)
+docker image rm $(docker image ls "sail-8.2/app" -q)
+docker image rm $(docker image ls "mysql" -q)
+docker volume rm $(docker volume ls -q | grep sail-mysql)
