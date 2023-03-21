@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+./vendor/bin/sail down
+./remove_containers
+./start_containers
